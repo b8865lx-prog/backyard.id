@@ -295,7 +295,7 @@ document.addEventListener('click', e => {
 function setIcons() { document.querySelectorAll('[data-ic]').forEach(el => el.outerHTML = ic(el.dataset.ic, el.dataset.c)); }
 
 function renderCTAs() {
-  const label = ON ? `Book Slot (${E.price})` : 'Gabung Komunitas';
+  const label = ON ? `Book Slot ` : 'Gabung Komunitas';
   ['#nav-cta', '#sticky-cta'].forEach(s => {
     const a = $(s); a.textContent = label;
     if (ON) { a.href = '#schedule'; }
